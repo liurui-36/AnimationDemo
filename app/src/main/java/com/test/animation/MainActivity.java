@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
+
+        setTitle("View Animation");
     }
 
-
-    @OnClick({R.id.translate, R.id.scale, R.id.rotate, R.id.alpha, R.id.set, R.id.start_second})
+    @OnClick({R.id.translate, R.id.scale, R.id.rotate, R.id.alpha, R.id.set,
+            R.id.start_second, R.id.start_three})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.translate:
@@ -45,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.start_second:
                 startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                break;
+            case R.id.start_three:
+                startActivity(new Intent(MainActivity.this, ThreeActivity.class));
                 break;
         }
     }

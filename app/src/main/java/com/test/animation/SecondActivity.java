@@ -28,6 +28,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.inject(this);
+
+       setTitle("LayoutAnimation");
     }
 
     private void initData() {

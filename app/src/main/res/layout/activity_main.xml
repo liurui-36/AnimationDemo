@@ -59,6 +59,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="跳转到Second_Acticity" />
+        android:text="LayoutAnimation" />
+
+    <Button
+        android:id="@+id/start_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="属性动画" />
 
 </RelativeLayout>
