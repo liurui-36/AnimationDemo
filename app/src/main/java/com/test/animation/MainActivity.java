@@ -1,5 +1,6 @@
 package com.test.animation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.translate, R.id.scale, R.id.rotate, R.id.alpha, R.id.set})
+    @OnClick({R.id.translate, R.id.scale, R.id.rotate, R.id.alpha, R.id.set, R.id.start_second})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.translate:
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.set:
                 setAnimation(R.anim.set_anim);
+                break;
+            case R.id.start_second:
+                startActivity(new Intent(MainActivity.this, SecondActivity.class));
                 break;
         }
     }
